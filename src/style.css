@@ -1,0 +1,173 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+body {
+  margin: 0;
+}  
+
+.page-wrapper {
+  background-color: darkcyan;
+  min-height: 100vh;
+  min-width:100vw;
+}
+
+.page-header {
+  margin: 0 auto;
+  background-color: cornsilk;
+  font-size: 50px;
+  font-family: roboto, monospace;
+  text-align: center;
+  border-bottom: 2px solid rgb(13, 179, 179);
+  height: 60px;
+}
+
+.content-wrapper {
+  padding-top: 2.5%;
+  border-top: 2px solid rgb(5, 119, 119);
+  display: grid;
+  grid-template-columns: 2.5% 30% 2.5% 62.5% 2.5%;
+  grid-template-rows: 1fr 5%;
+  gap: 0;
+}
+
+.column {
+  background-color: cornsilk;
+  border:2px solid rgb(5, 119, 119);
+  height: 675px;                          /* fix this later */
+  padding: 0 2%;
+  grid-row: 1/2;
+}
+
+.col-1 {
+  grid-column: 2/3;
+}
+
+.col-2 {
+  grid-column: 4/5;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 7% 1fr;
+}
+
+.col-header {
+  text-align: center;
+  margin-top:1%;
+  margin-bottom: 3%;
+}
+
+.goals-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height:90%;
+  padding:0;
+}
+
+.goals-container {
+  display:flex;
+  flex-flow:column;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex: 1 1 auto;
+}
+
+.col-header-2 {
+  margin-bottom: 3%;
+  margin-top:1%;
+  text-align: center;
+  grid-column: 1fr;
+  grid-row: 1/2;
+}
+
+.completed-wrapper {
+  grid-column: 1/2;
+  grid-row: 2/4;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: stretch;
+  border: 2px solid darkcyan;
+  margin: 1% 0%;
+  outline: 1px solid rgb(58, 58, 58);
+}
+
+.completed-container {
+  display:flex;
+  flex-flow:column;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex: 1 1 auto;
+}
+
+.results-wrapper {
+  grid-column: 2/3;
+  border: 2px solid darkcyan;
+  display:flex;
+  flex-direction: column;
+  margin: 1% 0% 1% 1%;
+  outline: 1px solid rgb(58, 58, 58);
+}
+
+.results-container {
+  display:flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding:2% 10%;
+}
+
+.results-para {
+  font-size: 20px;
+  margin: 4%;
+}
+
+.results-span {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 8px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+input {
+  border: 1px solid darkcyan;
+}
+.goal-span, .complete-span {
+  margin: 0 5px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.btn-1 {
+  margin-left:10px;
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px solid darkcyan;
+}
+
+.btn-1:hover {
+  background-color: darkgray;
+  color: darkcyan;
+}
+
+.btn-1:active {
+  background-color: darkcyan;
+  color:darkgray;
+}
+
+.btn-span {
+  margin-top:5%;
+  align-self: center;
+}
+
+.btn-2 {
+  height: 50px;
+  margin:20px;
+}
